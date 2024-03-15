@@ -1,0 +1,256 @@
+@import '../../assets/styles/variables.scss';
+
+#portfolio {
+    // overflow: hidden;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    // height: 100vh;
+    // max-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
+    padding: 1rem 2rem;
+
+    .promo-container {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 2rem;
+    }
+
+    .promo-wrap {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        background-color: #393636;
+        padding: 1.3rem;
+        border-radius: 1rem;
+
+        &.other {
+            grid-template-columns: 100%;
+        }
+    }
+
+
+
+
+    .promo-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-gap: 1rem;
+        margin-right: 1rem;
+        align-self: flex-start;
+    }
+
+    .section-title {
+        @extend %section-title;
+    }
+
+    .promo-title {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .promo-subtitle {
+        font-weight: 500;
+    }
+
+    .promo-details {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1rem;
+        font-weight: 300;
+
+        &.additional {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin-top: 2rem;
+        }
+
+        .promo-item {
+            display: inline;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $orangeColor;
+            // background: #e8a306;
+            // border-radius: 1rem;
+            // padding: 0 0.5rem;
+            padding-right: 0.5rem;
+            // color: black;
+
+        }
+
+        .rolename {
+            font-size: 1.2rem;
+            font-weight: 400;
+            // margin-left: .5rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            // display: flex;
+            flex-direction: column;
+            // grid-gap: 0.7rem;
+            margin-left: 1.2rem;
+
+            li::marker {
+                color: $orangeColor;
+            }
+        }
+
+    }
+
+
+
+    .promo-report {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1rem;
+    }
+
+    // .promo-gallery {
+    // display: flex;
+    // flex-direction: row;
+    // width: 100%;
+    // justify-content: space-between;
+    // }
+
+    .gallery-item {
+        height: 250px;
+        &.logitech-img {
+            height: 227px;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        &.logitech-promo {          
+            height: auto;
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
+    .slick-slide {
+        margin: 0 .8rem;
+    }
+
+    .slick-slider {
+        margin-bottom: 1rem;
+    }
+
+
+    //=======================
+    // .slick-dots li {
+    //     display: none
+    // }
+
+    // .slick-dots li.slick-active ~ li:nth-last-child(1),
+    // .slick-dots li.slick-active ~ li:nth-last-child(2),
+    // .slick-dots li.slick-active ~ li:nth-last-child(3) {
+    //     display: none;
+    // }
+    //====================================
+
+    .slick-prev::before,
+    .slick-next::before {
+        font-size: 40px;
+    }
+
+    .slick-dots li button::before {
+        color: $orangeColor;
+        font-size: 0.7rem;
+    }
+
+    .video {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+
+    .smm-wrap {
+        display: flex;
+        grid-gap: 2rem;
+
+        .smm-clogans {
+            font-style: italic;
+        }
+    }
+
+    @media screen and (max-width: 1190px) {
+        .gallery-item {
+            &.logitech-img {
+                height: 173px;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 920px) {
+        .promo-wrap {
+            grid-template-columns: 100%;
+        }
+        .smm-wrap {
+            flex-direction: column;
+        }
+
+        .promo-details {
+            margin-bottom: 1rem;
+            grid-gap: .7rem;
+
+            &.additional {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+
+        .promo-desc {
+            // grid-gap: 1rem;
+            margin-right: 0;
+        }
+        .gallery-item {
+            &.logitech-img {
+                height: 173px;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 540px) {
+        .gallery-item {
+            &.logitech-img {
+                height: 124px;
+            }
+        }
+        // .promo-wrap {
+        //     grid-template-columns: 100%;
+        // }
+        .promo-desc {
+            grid-gap: .7rem;
+        }
+
+        .promo-title {
+            font-size: 1.3rem;
+        }
+
+        .promo-subtitle {
+            font-size: 1rem;
+        }
+
+        .promo-details {
+
+            // &.additional {
+            //     grid-column-start: 1;
+            //     grid-column-end: 1;
+            // }
+            .promo-item,
+            .rolename {
+                font-size: 1rem;
+            }
+
+        }
+
+    }
+
+}

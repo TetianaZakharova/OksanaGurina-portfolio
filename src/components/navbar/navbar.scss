@@ -1,0 +1,128 @@
+@import '../../assets/styles/variables.scss';
+
+.navbar {
+    background: $backgroundMain;
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    .logo {
+        object-fit: cover;
+        height: 3rem;
+        width: 9rem;
+    }
+
+    .desktopMenuListItem {
+        margin: 1rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        // font-weight: 500;
+
+
+        &:hover {
+            color: $orangeColor;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid $orangeColor;
+            transition: all .2s;
+        }
+    }
+
+    .desktopMenuBtn {
+        @extend %btn-base-orange;
+        display: flex;
+        padding: 1rem 2rem;
+        font-family: 'Poppins';
+        background-color: $orangeColor;
+        font-weight: 700;
+        color: black;
+        // text-transform: uppercase;
+        letter-spacing: 1.5px;
+
+        &:hover {
+            background-color: transparent;
+            a{
+                color: white;
+            }
+       
+        }
+    }
+
+    .active {
+        color: $orangeColor;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid $orangeColor;
+    }
+    .activeBtn {
+        color: black;
+    }
+
+    .navMenu {
+        position: absolute;
+        top: 4rem;
+        right: 2rem;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+        height: fit-content;
+        min-width: 15rem;
+        background: rgb(40, 40, 40);
+        border-radius: 1rem;
+        // &.showMenu {
+        //     display: none;
+        // }
+
+
+        .listItem {
+            color: white;
+            padding: 0.5rem 3rem;
+            margin: 0.25rem;
+            background: rgb(30, 30, 30);
+
+            &:hover {
+                cursor: pointer;
+                color: $orangeColor;
+                // padding-bottom: 0.5rem;
+                // border-bottom: 3px solid $orangeColor;          
+            }
+        }
+    }
+
+    .burger-menu {
+        // display: flex;
+        display: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 880px) {
+    .navbar {
+
+        // .navMenu.showMenu {
+        //     display: flex;
+        // }
+        .burger-menu {
+            display: flex;
+        }
+
+        .desktopMenu,
+        .desktopMenuBtn {
+            display: none;
+        }
+
+    }
+}
