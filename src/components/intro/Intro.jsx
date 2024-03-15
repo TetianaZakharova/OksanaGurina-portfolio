@@ -7,7 +7,9 @@ export const Intro = () => {
   return (
     <section id="intro">
       <div className="introContent">
-        <img src={bg} alt="Profile" className="bg" />
+        <div className="portrait-wrap">
+          <img src={bg} alt="Profile" className="bg" />
+        </div>
         <div className="introInfo">
           <span className="introText">
             <span className="introName">Oksana Gurina</span> <br />

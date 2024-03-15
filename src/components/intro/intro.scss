@@ -19,7 +19,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         grid-gap: 2rem;
+    }
+
+    .portrait-wrap {
+        padding-left: 2rem;
     }
 
     .bg {
@@ -30,8 +35,9 @@
         object-fit: contain;
         // height: 65vh;
         width: 35vw;
+        border-radius: 1rem;
         // width: 90%;
-        padding-left: 2rem;
+        // padding-left: 2rem;
     }
 
     .introInfo {
@@ -68,11 +74,11 @@
 
 
             .download-btn {
-                @extend %btn-base-orange; 
-                display: flex;         
+                @extend %btn-base-orange;
+                display: flex;
                 font-weight: 500;
                 color: white;
-                font-size: 1rem;            
+                font-size: 1rem;
                 letter-spacing: 2px;
             }
         }
@@ -87,10 +93,17 @@
             font-size: 1.5rem;
         }
 
-        .bg {
-            width: 50%;
-            padding-left: 0;
+        .portrait-wrap {
+            // padding-left: 2rem;
+            display: flex;
+            justify-content: center;
         }
+
+        .bg {
+            width: 70%;
+            // padding-left: 0;
+        }
+
         .introInfo {
             width: 90%;
             padding-right: 0;
@@ -100,6 +113,7 @@
             .introName {
                 font-size: 2rem;
             }
+
             .introPara {
                 font-size: 1rem;
                 font-weight: 200;
@@ -113,11 +127,14 @@
         .introContent {
             font-size: 1.5rem;
         }
-        .introInfo {   
-            grid-gap: .5rem;    
+
+        .introInfo {
+            grid-gap: .5rem;
+
             .introName {
                 font-size: 2rem;
             }
+
             .introPara {
                 font-size: 1rem;
                 font-weight: 200;
@@ -129,11 +146,14 @@
         .introContent {
             font-size: 1.5rem;
         }
+
         .introInfo {
             grid-gap: 1.5rem;
+
             .introName {
                 font-size: 2.5rem;
             }
+
             .introPara {
                 font-size: 1rem;
                 font-weight: 200;

@@ -141,7 +141,9 @@ export const Kyivstar = () => {
                     autoPlay="0"
                   ></iframe>
                 ) : (
-                  <video className="video" controls autoPlay muted key={i}>
+                  <video className="video" controls 
+                  // autoPlay 
+                  muted key={i}>
                     <source src={vid} type="video/mp4" />
                   </video>
                 )

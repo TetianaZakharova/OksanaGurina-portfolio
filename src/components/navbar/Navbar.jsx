@@ -18,7 +18,15 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src={logo} alt="logo" className="logo" />
+      <Link        
+        to="intro"
+        // spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+      >
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
       <div className="desktopMenu">
         <Link
           className="desktopMenuListItem"
