@@ -6,42 +6,20 @@
     max-width: 75rem;
     margin: 0 auto;
     padding: 1rem 2rem;
-    //   min-height: calc(100vh - 5rem);
 
     .contacts-wrap {
-        // display: grid;
-        // grid-template-columns: 50% 50%;
-        // align-items: center;
-        // background-color: #393636;
-        // padding: 1.3rem;
-        // border-radius: 1rem;
-
         display: flex;
         flex-direction: row;
         grid-gap: 2rem;
         margin-top: 1rem;
         justify-content: center;
         align-items: center;
-
-
-
-        // .form-container {
-        //     background-color: #393636;
-        //     padding: 1.3rem;
-        //     border-radius: 1rem;
-        //     width: 65%;
-        // }
-
-        // &.other {
-        //     grid-template-columns: 100%;
-        // }
     }
 
     .contact-container {
         width: 30%;
 
         img {
-            // width: 30%;
             width: 100%;
             border-radius: 1rem;
         }
@@ -108,8 +86,6 @@
 
 
     .form-input {
-        // border-radius: .5rem;
-
         label {
             color: rgb(126, 119, 119);
         }
@@ -131,17 +107,13 @@
 
     .sumbitBtn {
         @extend %btn-base-orange;
-        display: flex;
-        // margin: 0 auto;
+        display: flex;      
         justify-content: center;
-        padding: 1rem 2rem;
-        font-family: 'Poppins';
+        padding: 1rem 2rem;  
         background-color: $orangeColor;
         font-weight: 700;
-        color: black;
-        // text-transform: uppercase;
-        letter-spacing: 1.5px;
-        // border-radius: .5rem;
+        color: black;    
+        letter-spacing: 1.5px;  
 
         &:hover {
             background-color: transparent;
@@ -150,7 +122,6 @@
         }
 
         &:disabled {
-            // background-color: grey;
             opacity: 0.5;
 
             &:hover {
@@ -177,7 +148,6 @@
     letter-spacing: 1.2px;
     text-transform: uppercase;
     border: 2px solid $orangeColor;
-    // transition: all .5s;
     &:hover{
         cursor: pointer;
         background-color: transparent;

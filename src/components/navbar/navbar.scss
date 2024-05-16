@@ -25,8 +25,7 @@
         margin: 1rem;
         cursor: pointer;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        // font-weight: 500;
+        letter-spacing: 2px;    
         font-size: .8rem;
 
 
@@ -41,12 +40,9 @@
     .desktopMenuBtn {
         @extend %btn-base-orange;
         display: flex;
-        // padding: 1rem 2rem;
-        font-family: 'Poppins';
         background-color: $orangeColor;
         font-weight: 700;
-        color: black;
-        // text-transform: uppercase;
+        color: black; 
         letter-spacing: 1.5px;
         a {
             padding: 1rem 2rem;
@@ -81,11 +77,7 @@
         height: fit-content;
         min-width: 15rem;
         background: rgb(40, 40, 40);
-        border-radius: 1rem;
-        // &.showMenu {
-        //     display: none;
-        // }
-
+        border-radius: 1rem;  
 
         .listItem {
             color: white;
@@ -95,15 +87,12 @@
 
             &:hover {
                 cursor: pointer;
-                color: $orangeColor;
-                // padding-bottom: 0.5rem;
-                // border-bottom: 3px solid $orangeColor;          
+                color: $orangeColor;            
             }
         }
     }
 
-    .burger-menu {
-        // display: flex;
+    .burger-menu {    
         display: none;
 
         &:hover {
@@ -115,11 +104,7 @@
 }
 
 @media screen and (max-width: 905px) {
-    .navbar {
-
-        // .navMenu.showMenu {
-        //     display: flex;
-        // }
+    .navbar { 
         .burger-menu {
             display: flex;
         }
