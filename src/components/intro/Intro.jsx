@@ -12,12 +12,12 @@ export const Intro = () => {
         </div>
         <div className="introInfo">
           <span className="introText">
-            <span className="introName">Oksana Gurina</span> <br />
+            <span className="introName">Oksana GURINA</span> <br />
             Marketing Project Manager
           </span>
           <p className="introPara">
             With over 15 years experience in marketing and proficiency in 3
-            languages (English, French, Ukrainian), <br /> I am looking for a
+            languages (English, French, Ukrainian). <br />I am looking for a
             Marketing Project Manager position for international brands
           </p>
           <div className="btn-wrap">
@@ -31,7 +31,7 @@ export const Intro = () => {
             </a>
             <a
               className="download-btn"
-              href="https://drive.google.com/file/d/16Cs6KjLI-_7DOub1iCzDKEeebnf_O-f3/view"
+              href="https://drive.google.com/file/d/1M9ARYw0Hc76fdZ_bkJezJXIhrS8E6B7q/view"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -61,7 +61,8 @@ export const Experience = () => {
                       component="h2"
                       id="modal-title"
                       level="h4"
-                      textColor="inherit"
+                      // textColor="inherit"
+                      textColor="white"
                       fontWeight="lg"
                       mb={1}
                     >
@@ -71,7 +72,8 @@ export const Experience = () => {
                       component="p"
                       //   id="modal-title"
                       //   level="h4"
-                      textColor="inherit"
+                      // textColor="inherit"
+                      textColor="white"
                       fontWeight="lg"
                       mb={1}
                     >

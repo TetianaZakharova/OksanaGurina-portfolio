@@ -62,7 +62,6 @@ import alcatelidol2 from "../../assets/promo/Alcatel/Alkatel-Idol-2.png";
 import alcatelidol3 from "../../assets/promo/Alcatel/Alkatel-Idol-3.png";
 import alcatelidol4 from "../../assets/promo/Alcatel/Alkatel-Idol-4.png";
 
-
 export const kspromo = [
   {
     id: "kspromo1",
@@ -200,19 +199,19 @@ export const vodafonepromo = [
     ],
     photos: [`${nokia7}`, `${nokia8}`, `${nokia9}`, `${nokia10}`, `${nokia11}`],
   },
-  {
-    id: "vodafone4",
-    title: "SMARTPHONE PROMO: LOVE SEASON 2019",
-    subtitle: "One year without payments",
-    role: "Project Manager",
-    communication: ["Posters, Leaflets, SMS"],
-    budget: "",
-    target: "",
-    video: [`${loveseason}`],
-    photos: [
-      // `${smarphnone1}`,
-    ],
-  },
+  // {
+  //   id: "vodafone4",
+  //   title: "SMARTPHONE PROMO: LOVE SEASON 2019",
+  //   subtitle: "One year without payments",
+  //   role: "Project Manager",
+  //   communication: ["Posters, Leaflets, SMS"],
+  //   budget: "",
+  //   target: "",
+  //   video: [`${loveseason}`],
+  //   photos: [
+  //     // `${smarphnone1}`,
+  //   ],
+  // },
 ];
 
 export const asbispromo = [
@@ -267,6 +266,38 @@ export const asbispromo = [
     video: ["https://www.youtube.com/embed/w0uKlsc3Xlg?si=-mcgO-rbu8okF2SK"],
     photos: [`${asbishub1}`, `${asbishub2}`, `${asbishub3}`, `${asbishub4}`],
   },
+
+  {
+    id: "asbisromo4",
+    title: "PROMO B2B: ASBIS-POKER",
+    subtitle:
+      "Channel promo designed to motivate partners to purchase laptops from the ASBIS company.",
+    description: `IDEA:
+    By making purchases during the quarter, participants accumulate bonuses to participate in a real annual poker tournament, which is held in a suburban location.
+    Tournament prizes: participants silver chips, drinks and cash prize.`,
+    role: "Project Manager",
+    tasks: [
+      "Negotiations with vendors and suppliers",
+      "Retrospective analytics and calculations for bonus grid",
+      "Budgeting",
+      "Event management",
+      "Comprehensive reporting",
+    ],
+    communication: ["E-mailing", "Closed web site"],
+    budget: "€ 20K",
+    results: [],
+    target: "2K pcs",
+    video: [],
+    photos: [
+      `${asbispoker3}`,
+      `${asbispoker5}`,
+      `${asbispoker6}`,
+      `${asbispoker2}`,
+      `${asbispoker4}`,
+    ],
+    // photos2: [`${asbispoker1}`, `${asbispoker2}`, `${asbispoker4}`],
+    photos2: [`${asbispoker1}`],
+  },
   {
     id: "asbisromo3",
     title: "FIGHT FOR RYZEN!",
@@ -290,30 +321,6 @@ export const asbispromo = [
     video: [],
     photos: [`${asbishub6}`, `${asbishub7}`, `${asbishub8}`, `${asbishub9}`],
     photos2: [`${asbishub5}`],
-  },
-  {
-    id: "asbisromo4",
-    title: "PROMO B2B: ASBIS-POKER",
-    subtitle:
-      "Channel promo designed to motivate partners to purchase laptops from the ASBIS company.",
-    description: `IDEA:
-    By making purchases during the quarter, participants accumulate bonuses to participate in a real annual poker tournament, which is held in a suburban location.
-    Tournament prizes: participants silver chips, drinks and cash prize.`,
-    role: "Project Manager",
-    tasks: [
-      "Negotiations with vendors and suppliers",
-      "Retrospective analytics and calculations for bonus grid",
-      "Budgeting",
-      "Event management",
-      "Comprehensive reporting",
-    ],
-    communication: ["E-mailing", "Closed web site"],
-    budget: "€ 20K",
-    results: [],
-    target: "2K pcs",
-    video: [],
-    photos: [`${asbispoker3}`, `${asbispoker5}`, `${asbispoker6}`],
-    photos2: [`${asbispoker1}`, `${asbispoker2}`, `${asbispoker4}`],
   },
 ];
 

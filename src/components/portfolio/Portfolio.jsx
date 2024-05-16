@@ -70,8 +70,14 @@ export const Portfolio = () => {
               },
             }}
           >
-            {experience.map((item) => {     
-              return <Tab label={item.name} value={item.id.toString()} key={item.id}/>;
+            {experience.map((item) => {
+              return (
+                <Tab
+                  label={item.name}
+                  value={item.id.toString()}
+                  key={item.id}
+                />
+              );
             })}
           </TabList>
         </Box>
@@ -81,7 +87,7 @@ export const Portfolio = () => {
             padding: "24px 0",
           }}
         >
-          <Kyivstar />
+          <Batibois />
         </TabPanel>
         <TabPanel
           value="2"
@@ -89,7 +95,7 @@ export const Portfolio = () => {
             padding: "24px 0",
           }}
         >
-          <Vodafone />
+          <Kyivstar />
         </TabPanel>
         <TabPanel
           value="3"
@@ -97,7 +103,7 @@ export const Portfolio = () => {
             padding: "24px 0",
           }}
         >
-          <Asbis />
+          <Vodafone />
         </TabPanel>
         <TabPanel
           value="4"
@@ -105,7 +111,7 @@ export const Portfolio = () => {
             padding: "24px 0",
           }}
         >
-          <Alcatel />
+          <Asbis />
         </TabPanel>
         <TabPanel
           value="5"
@@ -113,7 +119,7 @@ export const Portfolio = () => {
             padding: "24px 0",
           }}
         >
-          <Batibois />
+          <Alcatel />
         </TabPanel>
       </TabContext>
     </section>

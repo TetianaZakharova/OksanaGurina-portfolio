@@ -50,6 +50,12 @@
         font-weight: 600;
     }
 
+    .landing-link {
+        margin-left: 16px;
+        font-size: 20px;
+
+    }
+
     .promo-subtitle {
         font-weight: 500;
     }
@@ -116,6 +122,7 @@
 
     .gallery-item {
         height: 250px;
+
         &.logitech-img {
             height: 227px;
         }
@@ -124,11 +131,22 @@
             height: 100%;
         }
 
-        &.logitech-promo {          
+        &.logitech-promo {
             height: auto;
+
             img {
                 height: auto;
                 width: 100%;
+            }
+
+            &.poker-img {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 60%;
+                    height: auto;
+                }
             }
         }
     }
@@ -169,6 +187,13 @@
         width: 100%;
     }
 
+    .video.blackfrd {
+        aspect-ratio: auto;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+
     .smm-wrap {
         display: flex;
         grid-gap: 2rem;
@@ -176,6 +201,12 @@
         .smm-clogans {
             font-style: italic;
         }
+    }
+
+    .week-results {
+        font-weight: 600;
+        font-size: 18px;
+        color: #FF0000;
     }
 
     @media screen and (max-width: 1190px) {
@@ -191,6 +222,7 @@
         .promo-wrap {
             grid-template-columns: 100%;
         }
+
         .smm-wrap {
             flex-direction: column;
         }
@@ -209,6 +241,7 @@
             // grid-gap: 1rem;
             margin-right: 0;
         }
+
         .gallery-item {
             &.logitech-img {
                 height: 173px;
@@ -223,6 +256,7 @@
                 height: 124px;
             }
         }
+
         // .promo-wrap {
         //     grid-template-columns: 100%;
         // }

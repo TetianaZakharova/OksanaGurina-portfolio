@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <Link        
+      <Link
         to="intro"
         // spy={true}
         smooth={true}
@@ -37,7 +37,7 @@ export const Navbar = () => {
           offset={-100}
           duration={500}
         >
-          About Me
+          Home
         </Link>
         <Link
           className="desktopMenuListItem"
@@ -60,6 +60,17 @@ export const Navbar = () => {
           duration={500}
         >
           Portfolio
+        </Link>
+        <Link
+          className="desktopMenuListItem"
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
+          About Me
         </Link>
         <Link
           className="desktopMenuListItem"
@@ -107,7 +118,7 @@ export const Navbar = () => {
             offset={-100}
             duration={500}
           >
-            About Me
+            Home
           </Link>
           <Link
             onClick={closeMenu}
@@ -132,6 +143,18 @@ export const Navbar = () => {
             duration={500}
           >
             Portfolio
+          </Link>
+          <Link
+            onClick={closeMenu}
+            className="listItem"
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
+            About Me
           </Link>
           <Link
             onClick={closeMenu}

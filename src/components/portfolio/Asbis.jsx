@@ -48,7 +48,20 @@ export const Asbis = () => {
         return (
           <div className={`promo-wrap`} key={item.id}>
             <div className="promo-desc">
-              <h1 className="promo-title">{item.title}</h1>
+              <h1 className="promo-title">
+                {item.title}
+                {item.landing !== undefined && (
+                  <span className='landing-link'>
+                    <a
+                      href={item.landing}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLink style={{ color: "white" }} />
+                    </a>
+                  </span>
+                )}
+              </h1>
               {item.subtitle && (
                 <h2 className="promo-subtitle">{item.subtitle}</h2>
               )}
@@ -67,22 +80,26 @@ export const Asbis = () => {
                 )}
                 {item.target && (
                   <div>
-                    <p className="promo-item">{item.id === "asbisromo4" ? "Sales targets 3Q’2017:" : "TA:"}</p>
+                    <p className="promo-item">
+                      {item.id === "asbisromo4"
+                        ? "Sales targets 3Q’2017:"
+                        : "TA:"}
+                    </p>
                     <span className="rolename">{item.target}</span>
                   </div>
                 )}
-                {
-                  item.location !== undefined && (
-                    <div>
+                {item.location !== undefined && (
+                  <div>
                     <p className="promo-item">Location:</p>
                     <span className="rolename">{item.location}</span>
                   </div>
-                  )
-                }
+                )}
                 {item.tasks && (
                   <div>
                     <div>
-                      <p className="promo-item">{item.id === "asbisromo3" ? "Agenda:" : "Tasks:"}</p>
+                      <p className="promo-item">
+                        {item.id === "asbisromo3" ? "Agenda:" : "Tasks:"}
+                      </p>
                     </div>
                     <ul>
                       {item.tasks.map((task, i) => (
@@ -97,7 +114,7 @@ export const Asbis = () => {
                       <p className="promo-item">Communication:</p>
                     </div>
                     <ul>
-                      {item.communication.map((com,i) => (
+                      {item.communication.map((com, i) => (
                         <li key={i}>
                           {com}{" "}
                           {item.landing !== undefined &&
@@ -150,9 +167,13 @@ export const Asbis = () => {
                     autoPlay="0"
                   ></iframe>
                 ) : (
-                  <video className="video" controls 
-                  // autoPlay 
-                  muted key={i}>
+                  <video
+                    className="video"
+                    controls
+                    // autoPlay
+                    muted
+                    key={i}
+                  >
                     <source src={vid} type="video/mp4" />
                   </video>
                 )
@@ -160,16 +181,21 @@ export const Asbis = () => {
               {item.photos2 !== undefined && (
                 <div className="slider-container promo-gallery">
                   {item.photos2.length === 1 ? (
-                    item.photos2.map((item,i) => {
+                    item.photos2.map((it, i) => {
                       return (
-                        <div className="gallery-item logitech-promo" key={i}>
-                          <img src={item} alt="Asbis promo" />
+                        <div
+                          className={`gallery-item logitech-promo ${
+                            item.id === "asbisromo4" ? "poker-img" : ""
+                          }`}
+                          key={i}
+                        >
+                          <img src={it} alt="Asbis promo" />
                         </div>
                       );
                     })
                   ) : (
                     <Slider {...settings}>
-                      {item.photos2.map((item,i) => {
+                      {item.photos2.map((item, i) => {
                         return (
                           <div
                             className="gallery-item"
@@ -187,9 +213,13 @@ export const Asbis = () => {
               {item.photos.length > 0 && (
                 <div className="slider-container promo-gallery">
                   {item.photos.length === 1 ? (
-                    item.photos.map((item,i) => {
+                    item.photos.map((item, i) => {
                       return (
-                        <div className="gallery-item" style={{ width: "auto" }} key={i}>
+                        <div
+                          className="gallery-item"
+                          style={{ width: "auto" }}
+                          key={i}
+                        >
                           <img src={item} alt="Asbis promo" />
                         </div>
                       );

@@ -91,7 +91,7 @@ export const Vodafone = () => {
                     </div>
                     <ul>
                       {item.results.map((res, i) => (
-                        <li key={i}>{res}</li>
+                        <li key={i} className="week-results" >{res}</li>
                       ))}
                     </ul>
                   </div>
@@ -125,7 +125,7 @@ export const Vodafone = () => {
                     autoPlay="0"
                   ></iframe>
                 ) : (
-                  <video className="video" controls
+                  <video className={`video ${item.id === "vodafone1" ? "blackfrd": "yyy"}`} controls
                   //  autoPlay 
                    muted key={i}>
                     <source src={vid} type="video/mp4" />

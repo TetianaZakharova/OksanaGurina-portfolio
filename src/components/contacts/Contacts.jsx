@@ -154,6 +154,7 @@ export const Contacts = () => {
               label="Your Name"
               variant="outlined"
               name="name"
+              autoComplete="off"
               value={formData.name}
               onChange={handleInputChange}
               helperText={inputError.name ? validation.name : ""}
@@ -167,6 +168,7 @@ export const Contacts = () => {
               variant="outlined"
               name="email"
               type="email"
+              autoComplete="off"
               value={formData.email}
               onChange={handleInputChange}
               onBlur={handleEmailValidation}
@@ -182,6 +184,7 @@ export const Contacts = () => {
               multiline
               rows={4}
               name="message"
+              autoComplete="off"
               value={formData.message}
               onChange={handleInputChange}
               helperText={inputError.message ? validation.message : ""}
