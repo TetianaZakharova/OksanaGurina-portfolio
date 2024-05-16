@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OksanaGurina-portfolio/static/css/main.91826a5e.css",
+    "main.css": "/OksanaGurina-portfolio/static/css/main.3eb4dd47.css",
     "main.js": "/OksanaGurina-portfolio/static/js/main.24236c44.js",
     "static/media/KS-promo-parents-video-vert.mp4": "/OksanaGurina-portfolio/static/media/KS-promo-parents-video-vert.f8a2c54af24c2eeea415.mp4",
     "static/media/KS-promo-parents-video.mp4": "/OksanaGurina-portfolio/static/media/KS-promo-parents-video.514bc89652718cfdc025.mp4",
@@ -87,11 +87,11 @@
     "static/media/slick.ttf": "/OksanaGurina-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/OksanaGurina-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/OksanaGurina-portfolio/index.html",
-    "main.91826a5e.css.map": "/OksanaGurina-portfolio/static/css/main.91826a5e.css.map",
+    "main.3eb4dd47.css.map": "/OksanaGurina-portfolio/static/css/main.3eb4dd47.css.map",
     "main.24236c44.js.map": "/OksanaGurina-portfolio/static/js/main.24236c44.js.map"
   },
   "entrypoints": [
-    "static/css/main.91826a5e.css",
+    "static/css/main.3eb4dd47.css",
     "static/js/main.24236c44.js"
   ]
 }
