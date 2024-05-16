@@ -1,0 +1,13 @@
+.MuiModalClose-root {
+    svg {
+        fill: white;
+    }
+
+    &:hover {
+        svg {
+            fill: black;
+            transition: all .2s;
+        }
+    }
+
+}
