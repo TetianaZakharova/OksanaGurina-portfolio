@@ -72,6 +72,16 @@ export const Asbis = () => {
                     {item.slogan}
                   </p>
                 )}
+                <h3>
+                Un élément clé du succès du projet a été le fonctionnement ininterrompu du {" "}
+                <a
+                  href="https://burobrew.wordpress.com"
+                  target="_blank"
+                  style={{ color: "#e8a306" }}
+                >
+                robot-barista BuroBrew Cafflert
+                </a>
+              </h3>
                 {item.role && (
                   <div>
                     <p className="promo-item">Role:</p>

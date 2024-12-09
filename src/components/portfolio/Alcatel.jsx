@@ -52,7 +52,17 @@ export const Alcatel = () => {
               {item.subtitle && (
                 <h2 className="promo-subtitle">{item.subtitle}</h2>
               )}
-
+              <h3>
+                A key factor in the success of the project was the uninterrupted
+                operation of the{" "}
+                <a
+                  href="https://burobrew.wordpress.com"
+                  target="_blank"
+                  style={{ color: "#e8a306" }}
+                >
+                  BuroBrew Cafflert barista robot
+                </a>
+              </h3>
               <div className="promo-details">
                 {item.description !== undefined && (
                   <div>
@@ -171,7 +181,11 @@ export const Alcatel = () => {
                   {item.photos.length === 1 ? (
                     item.photos.map((item, i) => {
                       return (
-                        <div className="gallery-item" key={i} style={{ width: "auto" }}>
+                        <div
+                          className="gallery-item"
+                          key={i}
+                          style={{ width: "auto" }}
+                        >
                           <img src={item} alt="Asbis promo" />
                         </div>
                       );
@@ -181,7 +195,7 @@ export const Alcatel = () => {
                       {item.photos.map((i, index) => {
                         return (
                           <div
-                          key={index}
+                            key={index}
                             className={`gallery-item ${
                               item.id === "asbisromo1" ? "logitech-img" : ""
                             }`}

@@ -329,7 +329,8 @@ export const alcatelpromo = [
     id: "alcatelpromo1",
     title: "SPONSORSHIP OF THE “KOKTEBEL JAZZ FESTIVAL 2013”",
     subtitle:
-      "Relaunching of the ALCATEL ONE TOUCH brand in Ukraine after a 5 year break. Presentation of the brand's new values and actual product line",
+      "Relaunching of the ALCATEL ONE TOUCH brand in Ukraine after a 5 year break. Presentation of the brand's new values and actual product line.",
+    
     // slogan: `Presentation of the brand's new values and actual product line`,
     role: "Project Manager",
     tasks: [
